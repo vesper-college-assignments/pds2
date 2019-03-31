@@ -11,6 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d1aa4f75-e84a-4d09-b4e8-146a5728b1b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../lab01-02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab01-02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaencadeada" beforeDir="false" afterPath="$PROJECT_DIR$/listaencadeada" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaencadeada.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/listaencadeada.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaencadeada.o" beforeDir="false" afterPath="$PROJECT_DIR$/listaencadeada.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1_1/.idea/lab1_1.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1_1/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1_1/.idea/modules.xml" beforeDir="false" />
@@ -32,30 +38,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listaencadeada.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="295">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
-                <element signature="e#70#358#0" />
-                <element signature="e#360#680#0" />
-                <element signature="e#682#716#0" />
-                <element signature="e#1055#1333#0" />
-                <element signature="e#1275#1308#0" />
-                <element signature="e#732#818#0" />
-                <element signature="e#820#863#0" />
-                <element signature="e#2126#2793#0" />
+                <element signature="e#70#382#0" />
+                <element signature="e#384#716#0" />
+                <element signature="e#718#1056#0" />
+                <element signature="e#1058#1422#0" />
+                <element signature="e#1424#1473#0" />
+                <element signature="e#1475#1826#0" />
+                <element signature="e#2126#2937#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="786">
+              <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -63,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listaencadeada.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="693">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -80,8 +85,8 @@
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/../lab01-01/circunferencia.h" />
         <option value="$PROJECT_DIR$/listaencadeada.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/listaencadeada.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -119,6 +124,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -151,16 +157,18 @@
       <updated>1553989039930</updated>
       <workItem from="1553989041015" duration="3428000" />
       <workItem from="1554034908211" duration="6125000" />
+      <workItem from="1554063028953" duration="2837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9553000" />
+    <option name="totallyTimeSpent" value="12390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14486553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14669926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -208,32 +216,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/listaencadeada.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="693">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/listaencadeada.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="295">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
-            <element signature="e#70#358#0" />
-            <element signature="e#360#680#0" />
-            <element signature="e#682#716#0" />
-            <element signature="e#1055#1333#0" />
-            <element signature="e#1275#1308#0" />
-            <element signature="e#732#818#0" />
-            <element signature="e#820#863#0" />
-            <element signature="e#2126#2793#0" />
+            <element signature="e#70#382#0" />
+            <element signature="e#384#716#0" />
+            <element signature="e#718#1056#0" />
+            <element signature="e#1058#1422#0" />
+            <element signature="e#1424#1473#0" />
+            <element signature="e#1475#1826#0" />
+            <element signature="e#2126#2937#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
         </state>
       </provider>
     </entry>

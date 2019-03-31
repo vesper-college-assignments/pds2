@@ -46,7 +46,6 @@ void ListaEncadeada::print(){
 }
 
 int ListaEncadeada::get_iesimo(int position){
-    // TODO fazer começando de trás pra frente tb
     if (tamanho() < position){
         cout << "The position does not exist within list."<<endl;
         return 0;
@@ -81,10 +80,15 @@ void ListaEncadeada::remover_primeiro(){
         cout << "Sorry, a lista é vazia"<< endl;
         return;
     }
-    node_t *velho_primeiro = primeiro;
-    primeiro = velho_primeiro->proximo;
-    primeiro->anterior= nullptr;
-    delete(velho_primeiro);
+    node_t *crawler = primeiro;
+    if(size > 1) {
+        primeiro = crawler->proximo;
+        primeiro->anterior = nullptr;
+    }
+    else if (size == 1){
+        primeiro = nullptr;
+    }
+    delete(crawler);
     size--;
 
 }
@@ -98,7 +102,7 @@ void ListaEncadeada::inserir_iesimo(int key, int position){
     aux->elemento = key;
     node_t *crawler;
 
-    if( (size - position) <= size/2){
+    if( (size - position) >= size/2){
         crawler = primeiro;
         for (int i = 0; i < position-1; ++i)
             crawler = crawler->proximo;
@@ -120,11 +124,45 @@ void ListaEncadeada::inserir_iesimo(int key, int position){
 }
 
 void ListaEncadeada::remover_iesimo(int position){
+    if(position > (size-1)){
+        cout << "Position not whithin list" << endl;
+        return;
+    }
     if(primeiro == nullptr){
         cout << "List is empty" << endl;
         return;
     }
+    if (position == 0) {
+        remover_primeiro();
+        return;
+    }
+    if (position == (size-1)) {
+        remover_elemento();
+        return;
+    }
+    if (size ==1){
 
+        remover_elemento();
+        return;
+    }
+
+    node_t *crawler;
+
+    if( (size - position) >= size/2){
+        crawler = primeiro;
+        for (int i = 0; i < position; ++i)
+            crawler = crawler->proximo;
+        crawler->anterior->proximo = crawler->proximo;
+        crawler->proximo->anterior = crawler->anterior;
+    }
+    else{
+        crawler = ultimo;
+        for (int i = size-1; i > position ; --i)
+            crawler = crawler->anterior;
+        crawler->anterior->proximo = crawler->proximo;
+        crawler->proximo->anterior = crawler->anterior;
+    }
+    size--;
 
 }
 
