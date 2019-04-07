@@ -5,34 +5,59 @@ using namespace std;
 
 int main(){
 
-    long long int n, m;
+    long long int n, size;
     char l;
 
+    cin >> n;
+    map<int, int> pe_esquerdo;
+    map<int, int> pe_direito;
+    long long int numero_de_pares_corretos=0;
 
-    while(cin >> n && n){
+    while(n){
+        cin >> size >> l;
+        cout << size<< " " << l <<endl;
+        if (l == 'E'){
+            if (pe_direito.find(size) == pe_direito.end()){
+                cout << "Ainda não tem esse tamanho" <<endl;
+                pe_esquerdo.insert(pair<int, int>(size, 1));
+            }
+            else if (pe_direito[size]!=0){
+                cout << "Achei um par pra ele" <<endl;
+                pe_direito[size]--;
+                numero_de_pares_corretos++;
+            }
+            else{
+                cout << "não achei par pra ele" <<endl;
+                pe_esquerdo[size]++;
+            }
+        }
+        else if (l == 'D'){
+            if (pe_esquerdo.find(size) == pe_esquerdo.end()){
+                cout << "Ainda não tem esse tamanho" <<endl;
 
-        map<int, int> pe_esquerdo;
-        map<int, int> pe_direito;
-        map<int, int>::iterator it;
-        long long int numero_de_pares_corretos=0;
+                pe_direito.insert(pair<int, int>(size, 1));
+            }
+            else if (pe_esquerdo[size]!=0){
+                cout << "Achei um par pra ele" <<endl;
 
-        for (long long int i = 0; i<n; i++){
-            cin >> m >> l;
-
-            if (l == 'E'){
-                pe_esquerdo[m]++;
+                pe_esquerdo[size]--;
+                numero_de_pares_corretos++;
+            }
+            else{
+                cout << "não achei par pra ele" <<endl;
+                pe_direito[size]++;
             }
         }
 
-        for (it=pe_esquerdo.begin(); it!=pe_direito.end(); ++it) {
-            if (pe_direito.count(it->first) > 0) {
-                numero_de_pares_corretos += min(it->first, pe_direito[it->second]);
-            }
-        }
-
-        cout << numero_de_pares_corretos;
+//        map<int, bool>::iterator it;
+//        for (it=pe_esquerdo.begin(); it!=pe_direito.end(); ++it) {
+//            if (pe_direito.count(it->first) > 0) {
+//                numero_de_pares_corretos += min(it->first, pe_direito[it->second]);
+//            }
+//        }
         n--;
     }
+    cout << numero_de_pares_corretos <<  endl;
 
 
 }
