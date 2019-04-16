@@ -1,3 +1,6 @@
+#ifndef TWODAYPACKAGE_H
+#define TWODAYPACKAGE_H
+
 #include "package.h"
 #include <string>
 
@@ -7,6 +10,9 @@ class TwoDayPackage: public Package{
 private:
     float taxa;
 public:
-    TwoDayPackage(float taxa);
-    double calculate_cost();
+    TwoDayPackage(unsigned int _peso, unsigned int _custo, float _taxa, string _nome, string _endereco);
+    virtual unsigned int calculate_cost();
 };
+
+
+#endif

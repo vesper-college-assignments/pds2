@@ -1,14 +1,18 @@
+#ifndef OVERNIGHTPACKAGE_H
+#define OVERNIGHTPACKAGE_H
+
 #include "package.h"
 #include <string>
 
 using namespace std;
 
-class OvernightPackage: public Package{
+class OverNightPackage: public Package{
 private:
     float taxa_adicional;
 public:
-    OvernightPackage(float taxa){
-        this->taxa_adicional = taxa;
-    };
-    double calculate_cost();
+    OverNightPackage(unsigned int _peso, unsigned int _custo, float taxa, string _nome, string _endereco);
+    virtual unsigned int calculate_cost();
 };
+
+
+#endif
