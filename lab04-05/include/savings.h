@@ -1,15 +1,18 @@
+#ifndef PDS2_SAVINGS_H
+#define PDS2_SAVINGS_H
 
 class SavingsAccount{
 private:
     double savings_balance;
-    static double annual_savings_rate;
-public:
 
-    SavingsAccount(double balance){
-        annual_savings_rate = 1.0;
-        savings_balance = balance;
-    };
-    void calculate_monthly_interest();
+public:
+    static double annual_savings_rate;
+    SavingsAccount(double balance);
+    float calculate_monthly_interest();
+    float get_savings_balance();
     static void modify_interest_rate();
-    static double calculate_monthly_balance();
+    double calculate_monthly_balance();
 };
+
+
+#endif
