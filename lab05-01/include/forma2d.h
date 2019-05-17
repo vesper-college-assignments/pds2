@@ -1,8 +1,9 @@
-#ifndef LAB05_01
-#define LAB05_01
+#ifndef LAB05_01_FORMA2D
+#define LAB05_01_FORMA2D
 
 #include <iostream>
 #include "forma.h"
+
 using namespace std;
 
 class Forma2d: public Forma{

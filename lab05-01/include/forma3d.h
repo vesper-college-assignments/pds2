@@ -1,5 +1,5 @@
-#ifndef LAB05_01
-#define LAB05_01
+#ifndef LAB05_01_FORMA3D
+#define LAB05_01_FORMA3D
 
 #include <iostream>
 #include "forma.h"
@@ -18,3 +18,7 @@ private:
 
 
 #endif
+
+x=2,3,4
+010010001010010
+

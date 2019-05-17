@@ -1,7 +1,6 @@
 #ifndef LAB05_01
 #define LAB05_01
 
-
 #include <iostream>
 
 using namespace std;
