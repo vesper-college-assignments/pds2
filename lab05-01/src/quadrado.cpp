@@ -1,17 +1,26 @@
-#include <iostream>
 #include "quadrado.h"
+#include <string>
 
 using namespace std;
 
-Quadrado::Quadrado(double altura, double largura){
-    this->al
+Quadrado::Quadrado(string cor, double lado):
+    _cor(cor),
+    _nome("quadrado"),
+    _lado(lado)
+{}
+
+string Quadrado::get_cor(){
+    return this->_cor;
+}
+
+string Quadrado::get_nome(){
+    return this->_nome;
 }
 
 double Quadrado::get_area(){
-    return 2.0;
+    return (this->_lado*this->_lado);
 }
 
 double Quadrado::get_perimetro(){
-    return 2.0;
-
+    return (this->_lado*4);
 }

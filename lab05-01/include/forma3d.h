@@ -3,22 +3,14 @@
 
 #include <iostream>
 #include "forma.h"
+
 using namespace std;
 
-class Forma3d: public Forma{
+class Forma3D: public Forma{
 
 public:
     virtual double get_volume() = 0;
-
-private:
-    double altura;
-    double largura;
-    double profundidade;
 };
 
 
 #endif
-
-x=2,3,4
-010010001010010
-

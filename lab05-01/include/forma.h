@@ -1,7 +1,7 @@
-#ifndef LAB05_01
-#define LAB05_01
+#ifndef LAB05_01_FORMA
+#define LAB05_01_FORMA
 
-#include <iostream>
+#include <string>
 
 using namespace std;
 
